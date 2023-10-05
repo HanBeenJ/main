@@ -14,7 +14,9 @@ public class ChangeMoney {
 			int a = money/arrayMoney[i];//a가 돈의 개수로 지정
 			int b = money%arrayMoney[i];//b는 돈의 나머지로 지정(남은 돈)
 			money= b;//남은 돈을 money로 지정
-			System.out.println(names[i]+": "+a);//문자열로 지정한 돈 단위 + : + 개수 				
+			if(a >0) {
+			System.out.println(names[i]+": "+a);
+			}//문자열로 지정한 돈 단위 + : + 개수 				
 
 		}		
 	}
